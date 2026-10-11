@@ -391,6 +391,72 @@ fun PengaturanScreen(
         }
       }
     }
+
+    // 6. Panduan Unduh File APK & Pemasangan di HP
+    item {
+      Card(
+        modifier = Modifier.fillMaxWidth().testTag("download_apk_guide_card"),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        border = androidx.compose.foundation.BorderStroke(1.5.dp, CrimsonRed)
+      ) {
+        Column(modifier = Modifier.padding(18.dp)) {
+          Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+          ) {
+            Text(
+              "📦 File APK & Pemasangan di HP",
+              style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+              color = CrimsonRed
+            )
+            Box(
+              modifier = Modifier
+                .clip(RoundedCornerShape(8.dp))
+                .background(SoftPink)
+                .padding(horizontal = 8.dp, vertical = 4.dp)
+            ) {
+              Text("Siap Unduh", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = DarkCrimson)
+            }
+          }
+
+          Spacer(modifier = Modifier.height(8.dp))
+          Text(
+            "File aplikasi Android (Kas_Keluarga.apk, ukuran ~22 MB) sudah berhasil dibuat dan siap diunduh.",
+            fontSize = 13.sp,
+            color = MaterialTheme.colorScheme.onSurface,
+            lineHeight = 18.sp
+          )
+
+          Spacer(modifier = Modifier.height(12.dp))
+          Box(
+            modifier = Modifier
+              .fillMaxWidth()
+              .clip(RoundedCornerShape(12.dp))
+              .background(SoftPink.copy(alpha = 0.5f))
+              .border(1.dp, BorderPink, RoundedCornerShape(12.dp))
+              .padding(12.dp)
+          ) {
+            Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+              Text("📍 Cara Mengunduh File APK dari AI Studio:", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = DarkCrimson)
+              Text("1. Lihat panel berkas (File Explorer) di sebelah kiri layar.", fontSize = 12.sp, color = Color(0xFF333333))
+              Text("2. Cari berkas bernama 'Kas_Keluarga.apk'.", fontSize = 12.sp, color = Color(0xFF333333))
+              Text("3. Klik titik tiga (⋮) di samping nama berkas -> pilih 'Download'.", fontSize = 12.sp, color = Color(0xFF333333))
+              Text("4. Pindahkan berkas APK ke HP lalu buka untuk memasang.", fontSize = 12.sp, color = Color(0xFF333333))
+            }
+          }
+
+          Spacer(modifier = Modifier.height(10.dp))
+          Text(
+            "💡 Alternatif Tanpa Instal APK (PWA Suami & Istri):\nBuka web aplikasi di Chrome (Android) atau Safari (iPhone), lalu ketuk 'Tambahkan ke Layar Utama' (Add to Home Screen).",
+            fontSize = 11.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            lineHeight = 16.sp
+          )
+        }
+      }
+    }
   }
 
   // Dialog Add Category
