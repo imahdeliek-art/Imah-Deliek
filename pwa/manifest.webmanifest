@@ -1,0 +1,48 @@
+{
+  "name": "Kas Keluarga",
+  "short_name": "Kas Keluarga",
+  "description": "Pencatatan keuangan keluarga suami & istri dengan sinkronisasi online & offline",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fffafa",
+  "theme_color": "#b4122b",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Catat Pengeluaran",
+      "short_name": "Catat Keluar",
+      "description": "Buka langsung formulir pencatatan pengeluaran",
+      "url": "./index.html?action=catat&type=Pengeluaran",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Catat Pemasukan",
+      "short_name": "Catat Masuk",
+      "description": "Buka langsung formulir pencatatan pemasukan",
+      "url": "./index.html?action=catat&type=Pemasukan",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Catat Tabungan",
+      "short_name": "Tabungan",
+      "description": "Buka langsung formulir pencatatan tabungan",
+      "url": "./index.html?action=catat&type=Tabungan",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

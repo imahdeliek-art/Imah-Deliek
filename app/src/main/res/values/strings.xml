@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kas Keluarga</string>
+    <string name="shortcut_catat_pengeluaran">Catat Pengeluaran</string>
+    <string name="shortcut_catat_pemasukan">Catat Pemasukan</string>
+    <string name="shortcut_catat_tabungan">Catat Tabungan</string>
+</resources>
+

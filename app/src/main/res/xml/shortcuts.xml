@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="shortcut_pengeluaran"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_catat_pengeluaran"
+        android:shortcutLongLabel="@string/shortcut_catat_pengeluaran">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.kaskeluarga.hwkx"
+            android:targetClass="com.example.MainActivity"
+            android:data="kaskeluarga://catat?type=Pengeluaran" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="shortcut_pemasukan"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_catat_pemasukan"
+        android:shortcutLongLabel="@string/shortcut_catat_pemasukan">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.kaskeluarga.hwkx"
+            android:targetClass="com.example.MainActivity"
+            android:data="kaskeluarga://catat?type=Pemasukan" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="shortcut_tabungan"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_catat_tabungan"
+        android:shortcutLongLabel="@string/shortcut_catat_tabungan">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.kaskeluarga.hwkx"
+            android:targetClass="com.example.MainActivity"
+            android:data="kaskeluarga://catat?type=Tabungan" />
+    </shortcut>
+</shortcuts>

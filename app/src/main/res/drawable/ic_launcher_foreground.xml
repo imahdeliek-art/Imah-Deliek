@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Centered within 66dp safe zone (21dp margin on each side) -->
+    <!-- Wallet body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,36C29.79,36 28,37.79 28,40L28,68C28,70.21 29.79,72 32,72L76,72C78.21,72 80,70.21 80,68L80,40C80,37.79 78.21,36 76,36L32,36ZM32,42L74,42C75.1,42 76,42.9 76,44L76,46L32,46C30.9,46 30,45.1 30,44C30,42.9 30.9,42 32,42ZM66,51C69.31,51 72,53.69 72,57C72,60.31 69.31,63 66,63C62.69,63 60,60.31 60,57C60,53.69 62.69,51 66,51Z" />
+    <!-- Wallet clasp / heart dot -->
+    <path
+        android:fillColor="#FDECEE"
+        android:pathData="M66,54C67.66,54 69,55.34 69,57C69,58.66 67.66,60 66,60C64.34,60 63,58.66 63,57C63,55.34 64.34,54 66,54Z" />
+    <!-- Golden Coin above -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M54,26C58.42,26 62,29.58 62,34C62,34.7 61.9,35.37 61.73,36L46.27,36C46.1,35.37 46,34.7 46,34C46,29.58 49.58,26 54,26Z" />
+</vector>
+

@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ========================================================================
+    // ATURAN KEAMANAN (FIRESTORE SECURITY RULES) KAS KELUARGA
+    // ========================================================================
+    // Hanya pengguna yang berhasil login (email yang didaftarkan di Firebase Auth)
+    // yang dapat membaca dan menulis seluruh data keuangan keluarga.
+    function isAllowedFamilyMember() {
+      return request.auth != null;
+    }
+
+    match /{document=**} {
+      allow read, write: if isAllowedFamilyMember();
+    }
+  }
+}
+
